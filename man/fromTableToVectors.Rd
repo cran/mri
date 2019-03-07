@@ -14,7 +14,7 @@ fromTableToVectors(cont.table)
   \item{cont.table}{contingency table (a data frame with rownames and columnames)}
 }
 \value{
-A data frame with n rows and 2 columns. The first column corresponds to the rows of the contingency table while the second column correspond to the columns of the contingency table.
+A data frame with n rows and 2 columns. The first column corresponds to the rows of the contingency table while the second column corresponds to the columns of the contingency table.
 }
 \author{
 Marjan Cugmas

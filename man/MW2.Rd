@@ -5,7 +5,7 @@
 Modified Adjusted Wallace Index 2
 }
 \description{
-The functions are used to compute the value of the Modified Wallace Index 2 and the Modified Adjusted Wallace Index 2. They considers two partitions which are usually obtained on two sets of units where the intercept is non-empty or where one set of units is a subset of another set of units.
+The functions are used to compute the value of the Modified Wallace Index 2 and the Modified Adjusted Wallace Index 2. They consider two partitions which are usually obtained on two sets of units where the intercept is non-empty or where one set of units is a subset of another set of units.
 
 Because two vectors U and V (partitions) do not have the same length, the cluster of units, which are not present in the partition V (outgoers), need to be added to the partition V (denoted as V') and/or the cluster of units, which are not present in the partition U (newcomers), need to be added to the partition U (denoted as U'). The added values have to be \code{NA}.
 }
@@ -16,13 +16,13 @@ MAW2(U, V, k)
 \arguments{
   \item{U}{partition U or U'}
   \item{V}{partition V or V'}
-  \item{k}{the number of iterations to estimate the expected value in the case of two random and independent partitions}
+  \item{k}{the number of iterations to estimate the expected value of the index in the case of two random and independent partitions}
 }
 \value{
-The functions return the value of the Modified Wallace Index 2 or the Modified Adjusted Wallace Index 2. The expected value of the index in the case of two random and independant partitions is 0 when the adjusted version is used. The maximum value of the index is 2. Higher value indicates more similar (stable) partitions. Merging of clusters lowers the value of the index while splitting does not.
+The functions return the value of the Modified Wallace Index 2 or the value of the Modified Adjusted Wallace Index 2. The expected value of the (Modified) Adjusted Wallace indices 2 is 0 in the case of two random and independent partitions. The maximum value of the index is 2. Higher value indicates more similar (stable) partitions. Merging of clusters lowers the value of the indices while splitting does not.
 }
 \note{
-The special cases of modified indices (when only outgoers or only newcomers are present) are utomatically considered within these functions.
+The special cases of modified indices (when only outgoers or only newcomers are present) are automatically considered within these functions.
 }
 \references{
 Cugmas, M., & Ferligoj, A. (2018). Comparing two partitions of non-equal sets of units. Advances in Methodology and Statistics, 15(1), 1-21.
